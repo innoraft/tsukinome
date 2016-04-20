@@ -67,6 +67,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         controller: 'PlaylistCtrl'
       }
     }
+  })
+  .state('app.time-configure',{
+    url:'/time-configure',
+    views : {
+      'menuContent' : {
+        templateUrl : 'templates/time-configure.html',
+        controller:'timeCtrl'
+      }
+    }
   });
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/playlists');
