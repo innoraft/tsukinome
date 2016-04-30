@@ -9730,3 +9730,23 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
+
+.select-input {
+  float: left;
+  backgound-color: red; }
+
+.bg-color {
+  background-color: #11c1f3; }
+
+.image-header {
+  position: relative;
+  top: 0.50em;
+  max-width: 100px;
+  max-height: 100px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  text-align: center; }
+
+.icon-size {
+  font-size: !important; }

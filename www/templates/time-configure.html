@@ -1,32 +1,33 @@
-<ion-view view-title="Setup Time">
-  <ion-content>
-    	<label class="item item-input">
-        <div class="input-label">
-            how much you want to stay connected to your friends and family ? 
+<ion-view >
+  <ion-nav-title>Settings</ion-nav-title>
+  <ion-nav-buttons side="secondary">
+      <button class="button  button-calm button-outline" ng-click="doSomething()">
+       Next &nbsp;<i class="icon ion-chevron-right icon-size"></i> 
+      </button>
+  </ion-nav-buttons>
+  <ion-content class="bg-color">
+      <div style="text-align:center">
+        <img src="img/watch.png"/ class="image-header">
+      </div>
+      <div class="card app-font">
+        <div class="item item-text-wrap">
+            How often you want to stay connected to your friends and family ? 
         </div>
-      </label>
-		  <div class="item item-input item-select">
-    	 <div class="input-label"></div>
-    		<select>
-      			<option ng-repeat="n in ['Daily','Weekly','Monthly'  ]">{{n}}</option>
-    		</select>
-        
-  		</div>
-  		<label class="item item-input item-select">
-    		<div class="input-label">
-      	
-    		</div>
-    		<select>
-      			<option ng-repeat="n in [1,2,3,4,5,6]">{{n}}</option>
-    		</select>
-  		</label>
-
-		</div>
+        <div class="item item-input item-select">
+            <div class="input-label">Period</div>
+              <select>
+        			  <option ng-repeat="n in ['Daily','Weekly','Monthly'  ]">{{n}}</option>
+      		    </select>
+        </div>
+        <div class="item item-input item-select">
+  		    <div class="input-label">Number</div>
+            <select>
+      		  	 <option ng-repeat="n in [1,2,3,4,5,6]">{{n}}</option>
+    		    </select>	    
+      </div>
+    </div>
+  
   </ion-content>
-  <ion-footer-bar align-title="right" class="bar-assertive">
-  <div class="button-bar button-outline">
-    <a class="button button-light" ng-click="MoveBack()">Back</a>
-    <a class="button"></a>
-    <a class="button button-light" ng-click="MoveNext()">Next</a>
-  </div>
+  <!-- <ion-footer-bar align-title="right" class="">
+  </ion-footer-bar> -->
 </ion-view>

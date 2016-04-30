@@ -1,1 +1,10 @@
 /* Empty. Add your own CSS if you like */
+@font-face {
+	font-family: "lovely";
+	src : url("../lib/ionic/fonts/Raleway/Raleway-Medium.ttf") format('truetype');
+	font-weight: normal;
+    font-style: normal;
+}
+.app-font { 
+	font-family: "lovely" !important;
+}

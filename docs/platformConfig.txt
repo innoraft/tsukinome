@@ -1,0 +1,16 @@
+##ANDROID
+	1. configuration and permissions for contact access
+			 in app/res/xml/config.xml add this
+			 	<plugin name="Contacts" value="org.apache.cordova.ContactManager" />
+			 in app/AndroidManifest.xml 
+			 	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+				<uses-permission android:name="android.permission.READ_CONTACTS" />
+				<uses-permission android:name="android.permission.WRITE_CONTACTS" />
+	2. Add the platform to your project
+		cordova platform add android
+	3. build Platform 
+		cordova build android
+	4. run on Device 
+		cordova run android --device
+	5. 
+##Windows Phone
